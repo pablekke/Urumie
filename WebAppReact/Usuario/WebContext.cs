@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
-namespace WebAppReact.Models;
+namespace WebAppReact.Usuario;
 
 public partial class WebContext : DbContext
 {

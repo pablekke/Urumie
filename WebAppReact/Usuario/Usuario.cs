@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace WebAppReact.Models;
+namespace WebAppReact.Usuario;
 
 public partial class Usuario
 {
