@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pableke\\Desktop\\URUmie\\WebApp\\WebApp\\WebApp.csproj": {}
+    "C:\\Users\\csmat\\source\\repos\\Urumie\\WebApp\\WebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pableke\\Desktop\\URUmie\\WebApp\\WebApp\\WebApp.csproj": {
+    "C:\\Users\\csmat\\source\\repos\\Urumie\\WebApp\\WebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pableke\\Desktop\\URUmie\\WebApp\\WebApp\\WebApp.csproj",
+        "projectUniqueName": "C:\\Users\\csmat\\source\\repos\\Urumie\\WebApp\\WebApp.csproj",
         "projectName": "WebApp",
-        "projectPath": "C:\\Users\\pableke\\Desktop\\URUmie\\WebApp\\WebApp\\WebApp.csproj",
-        "packagesPath": "C:\\Users\\pableke\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pableke\\Desktop\\URUmie\\WebApp\\WebApp\\obj\\",
+        "projectPath": "C:\\Users\\csmat\\source\\repos\\Urumie\\WebApp\\WebApp.csproj",
+        "packagesPath": "C:\\Users\\csmat\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\csmat\\source\\repos\\Urumie\\WebApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\pableke\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\csmat\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -43,6 +43,22 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -62,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
