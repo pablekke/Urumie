@@ -8,8 +8,8 @@ namespace Dominio
 {
     internal class Usuario
     {
-        public int UltimoId = 1;
-        internal int Id { get; set; }
+        internal int UltimoId = 1;
+        private int Id { get; set; }
         internal string? Foto { get; set; }
         internal string? Nombre { get; set; }
         internal string? Apellido { get; set; }
