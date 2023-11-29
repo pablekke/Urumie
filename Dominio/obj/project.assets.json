@@ -1034,7 +1034,7 @@
       "projectName": "Dominio",
       "projectPath": "C:\\Users\\csmat\\source\\repos\\Urumie\\Dominio\\Dominio.csproj",
       "packagesPath": "C:\\Users\\csmat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\csmat\\source\\repos\\Urumie\\Dominio\\obj\\",
+      "outputPath": "C:\\Users\\csmat\\Source\\Repos\\Urumie\\Dominio\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

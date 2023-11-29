@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sZSYavpFLbB5yDqCl0ZFjRTm/XYASyI+LGyNqCVF6ICw3N824u+x0Mmz+mO++S4SyrRUznpexbJyvDPHFnyDqA==",
+  "dgSpecHash": "OWvT+YY/9h/q5ecdUNUMV09yGIOSqtl2mk5X+9IOWQPKOOL9bniS+TiT94UKluJJp9WbADANQXz7CeE8V5V4xQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\csmat\\Source\\Repos\\Urumie\\Dominio\\Dominio.csproj",
+  "projectFilePath": "C:\\Users\\csmat\\source\\repos\\Urumie\\Dominio\\Dominio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\csmat\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\csmat\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.9\\microsoft.entityframeworkcore.7.0.9.nupkg.sha512",
