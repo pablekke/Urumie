@@ -4,7 +4,8 @@ import React from 'react';
 
 const App = () => {
     return (
-        <p className='text-danger'>Hola mundo</p>
+        <h1 className='text-danger'>Hola mundo</h1>
+
     )
 }
 export default App;
