@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Dominio
 {
-    internal class Usuario
+    public class Usuario
     {
-        internal int UltimoId = 1;
-        private int Id { get; set; }
+        private static int _ultimoId { get; set; }
+        public int Id { get; set; }
         internal string? Foto { get; set; }
         internal string? Nombre { get; set; }
         internal string? Apellido { get; set; }
@@ -17,9 +17,9 @@ namespace Dominio
         internal string? Pass { get; set; }
         internal bool Bloqueado { get; set; }
 
-        internal Usuario(string? foto, string? nombre, string? apellido, string? email, string? pass)
+        public Usuario(string? foto, string? nombre, string? apellido, string? email, string? pass)
         {
-            Id = UltimoId++;
+            Id = _ultimoId++;
             Foto = foto;
             Nombre = nombre;
             Apellido = apellido;
@@ -28,13 +28,13 @@ namespace Dominio
             Bloqueado = false;
         }
 
-        internal Usuario()
+        public Usuario()
         {
-            Id = UltimoId++;
+            Id = _ultimoId++;
             Bloqueado = false;
         }
 
-        internal bool ValidarCredenciales(string e, string p)
+        public bool ValidarCredenciales(string e, string p)
         {
             if (string.IsNullOrEmpty(e))
             {
@@ -47,16 +47,17 @@ namespace Dominio
             return (e == Email && p == Pass);
         }
 
-        internal void Bloquear()
+        public void Bloquear()
         {
             Bloqueado = true;
         }
-        internal void Desbloquear()
+
+        public void Desbloquear()
         {
             Bloqueado = false;
         }
 
-        internal virtual void EsValido()
+        public virtual void EsValido()
         {
             if (string.IsNullOrEmpty(Nombre))
             {
@@ -80,6 +81,7 @@ namespace Dominio
             }
 
         }
+
         public override string ToString()
         {
             return $"Id: {Id}, Foto: {Foto ?? "N/A"}, Nombre: {Nombre ?? "N/A"}, Apellido: {Apellido ?? "N/A"}, Email: {Email ?? "N/A"}, Bloqueado: {Bloqueado}";
