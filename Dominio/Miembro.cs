@@ -14,7 +14,7 @@ namespace Dominio
         internal Genero Genero { get; set; }
         internal bool EmailVerificado { get; set; }
 
-        public Miembro():base(foto, nombre, apellido, email, pass)
+        public Miembro():base()
         {
 
         }

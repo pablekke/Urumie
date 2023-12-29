@@ -9,6 +9,5 @@ namespace Dominio
     public class Inquilino : Miembro
     {
         public int MyProperty { get; set; }
-        public int MyProperty { get; set; }
     }
 }
