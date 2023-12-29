@@ -5,7 +5,13 @@ using Microsoft.EntityFrameworkCore;
 namespace Dominio;
 
 public partial class UrumiedbContext : DbContext
+
+
 {
+
+    public DbSet<Usuario> Usuario { get; set; }
+    public DbSet<Alquiler> Alquiler { get; set; }
+
     public UrumiedbContext()
     {
     }
