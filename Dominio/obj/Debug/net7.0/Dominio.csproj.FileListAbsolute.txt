@@ -12,3 +12,4 @@ C:\Users\csmat\source\repos\Urumie\Dominio\obj\Debug\net7.0\refint\Dominio.dll
 C:\Users\csmat\source\repos\Urumie\Dominio\obj\Debug\net7.0\Dominio.pdb
 C:\Users\csmat\source\repos\Urumie\Dominio\obj\Debug\net7.0\Dominio.genruntimeconfig.cache
 C:\Users\csmat\source\repos\Urumie\Dominio\obj\Debug\net7.0\ref\Dominio.dll
+C:\Users\csmat\source\repos\Urumie\Dominio\obj\Debug\net7.0\Dominio.sourcelink.json
