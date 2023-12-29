@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dominio
+namespace Dominio.Controllers
 {
     public class Miembro : Usuario
     {
@@ -14,7 +14,7 @@ namespace Dominio
         internal Genero Genero { get; set; }
         internal bool EmailVerificado { get; set; }
 
-        public Miembro():base()
+        public Miembro() : base()
         {
 
         }

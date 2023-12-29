@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dominio
+namespace Dominio.Controllers
 {
-    public class Mensaje
+    public class Inquilino : Miembro
     {
+        public int MyProperty { get; set; }
     }
 }

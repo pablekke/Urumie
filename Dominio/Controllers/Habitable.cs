@@ -4,14 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dominio
+namespace Dominio.Controllers
 {
-    public enum Genero
+    internal class Habitable
     {
-        Hombre,
-        Mujer,
-        NoDefinido,
-        Otro,
-        Indiferente
     }
 }
