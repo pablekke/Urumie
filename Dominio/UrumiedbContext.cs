@@ -3,15 +3,14 @@ using System.Collections.Generic;
 using Dominio.Controllers;
 using Microsoft.EntityFrameworkCore;
 
-namespace Dominio;
-
 public partial class UrumiedbContext : DbContext
-
 
 {
 
     public DbSet<Usuario> Usuario { get; set; }
     public DbSet<Alquiler> Alquiler { get; set; }
+
+
 
     public UrumiedbContext()
     {
@@ -23,8 +22,6 @@ public partial class UrumiedbContext : DbContext
     }
 
     public virtual DbSet<Alquiler> Alquilers { get; set; }
-
-    public virtual DbSet<Efmigrationshistory> Efmigrationshistories { get; set; }
 
     public virtual DbSet<Usuario> Usuarios { get; set; }
 
@@ -45,16 +42,7 @@ public partial class UrumiedbContext : DbContext
             entity.ToTable("alquiler");
         });
 
-        modelBuilder.Entity<Efmigrationshistory>(entity =>
-        {
-            entity.HasKey(e => e.MigrationId).HasName("PRIMARY");
-
-            entity.ToTable("__efmigrationshistory");
-
-            entity.Property(e => e.MigrationId).HasMaxLength(150);
-            entity.Property(e => e.ProductVersion).HasMaxLength(32);
-        });
-
+     
         modelBuilder.Entity<Usuario>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");

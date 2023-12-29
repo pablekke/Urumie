@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Dominio
-build_property.ProjectDir = C:\Users\pableke\Desktop\Proyectos\Urumie\Dominio\
+build_property.ProjectDir = C:\Users\csmat\source\repos\Urumie\Dominio\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
