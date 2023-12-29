@@ -16,6 +16,7 @@ namespace Dominio
 
         public void AltaAlquiler(Alquiler a)
         {
+            a.EsValido();
             _alquileres.Add(a);
         }
 

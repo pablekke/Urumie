@@ -9,60 +9,67 @@ namespace Dominio
     public class Solicitud
     {
         private static int _ultimoId { get; set; }
-
         public int Id { get; set; }
-
-        public Miembro Solicitante { get; set; }
-
-        public Miembro Solicitado { get; set; }
-
+        public Inquilino Solicitante { get; set; }
+        public Inquilino Solicitado { get; set; }
         public Estado Estado { get; set; }
-
-        public DateTime fSolicitud { get; set; }
-
-#endregion
+        public DateTime FechaSolicitud { get; set; }
+        public DateTime? FechaAceptada { get; set; }
+        public DateTime? FechaRechazada { get; set; }
 
         #region Constructors
-        public Invitacion(Miembro solicitante, Miembro solicitado)
+        public Solicitud(Inquilino solicitante, Inquilino solicitado)
         {
             Id = _ultimoId++;
             Solicitante = solicitante;
             Solicitado = solicitado;
-            Estado = Estado.pendiente;
-            fSolicitud = DateTime.Now;
+            Estado = Estado.Pendiente;
+            FechaSolicitud = DateTime.Now;
+            FechaAceptada = null;
+            FechaRechazada = null;
         }
 
-        public Invitacion() { Id = _ultimoId++; }
+        public Solicitud()
+        {
+            Id = _ultimoId++;
+            Estado = Estado.Pendiente;
+            FechaSolicitud = DateTime.Now;
+            FechaAceptada = null;
+            FechaRechazada = null;
+        }
+
         #endregion
 
         #region Methods
-        public void Aceptar()
+        /*public void Aceptar()
         {
-            Estado = Estado.aprobada;
+            Estado = Estado.Aprobada;
             Solicitante.AddAmigo(Solicitado);
             Solicitado.AddAmigo(Solicitante);
-        }
+            FechaAceptada = DateTime.Now;
+        }*/
 
         public void Declinar()
         {
-            Estado = Estado.rechazada;
+            Estado = Estado.Rechazada;
+            FechaRechazada = DateTime.Now;
         }
 
         public void EsValido()
         {
-            if (Solicitante.Bloqueado)
+            /*if (Solicitante.Bloqueado)
             {
                 throw new Exception("Solicitante bloqueado");
-            }
+            }*/
 
             if (Solicitante == null)
             {
-                throw new Exception("El solicitante no debe ser vacío");
+                throw new Exception("Solicitante vacío");
             }
 
             if (Solicitado == null)
             {
-                throw new Exception("El solicitado no debe ser vacío");
+                throw new Exception("Solicitado vacío");
             }
 
             if (Solicitado == Solicitante)
@@ -71,10 +78,10 @@ namespace Dominio
             }
         }
 
-        public override string ToString()
+        /*public override string ToString()
         {
             return $"Solicitante:{Solicitante.Nombre} {Solicitante.Apellido}\nSolicitado: {Solicitado.Nombre} {Solicitado.Apellido}";
-        }
-
+        }*/
+        #endregion
     }
 }

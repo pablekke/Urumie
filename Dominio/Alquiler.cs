@@ -24,6 +24,8 @@ namespace Dominio
         internal int Precio { get; set; }
         internal bool Alquilado { get; set; }
         internal bool Bloqueado { get; set; }
+        internal DateTime? fechaAlquilado { get; set; }
+        
 
         public Alquiler(Propietario propietario, string descripcion, string nombreCalle, int numeroPuerta, bool esApto, string? apto, int cantidadBaños, int cantidadCuartos, bool garage, int pisos, int gastosComunes, int precio)
         {
@@ -42,6 +44,7 @@ namespace Dominio
             Precio = precio;
             Bloqueado = false;
             Alquilado = false;
+            fechaAlquilado = DateTime.Now;
         }
         
         public Alquiler()

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8YjaLxqcVUEnd2DP+XAI+UzkFzroft1BMFDh6DVqdkkfk+cCjpvfbfG460l0Qm6uyeD8O4NVg++R1qd0PyPi6w==",
+  "dgSpecHash": "utvijW6jPNio9edIG1Xopowk6ykuXpxHcdrVVz3O9sT3Xfcmjlht8Xn1DJ2xZL2TPTNgaZboNabA7cMrN1f2ZQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pableke\\Desktop\\URUmie\\Dominio\\Dominio.csproj",
+  "projectFilePath": "C:\\Users\\pableke\\Desktop\\Proyectos\\URUmie\\Dominio\\Dominio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pableke\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\pableke\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.9\\microsoft.entityframeworkcore.7.0.9.nupkg.sha512",

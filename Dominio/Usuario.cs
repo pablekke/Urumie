@@ -16,6 +16,8 @@ namespace Dominio
         internal string? Email { get; set; }
         internal string? Pass { get; set; }
         internal bool Bloqueado { get; set; }
+        internal DateTime FehaAlta { get; set; }
+        internal DateTime? FehaBaja { get; set; }
 
         public Usuario(string? foto, string? nombre, string? apellido, string? email, string? pass)
         {
@@ -26,12 +28,16 @@ namespace Dominio
             Email = email;
             Pass = pass;
             Bloqueado = false;
+            FehaAlta = DateTime.Now;
+            FehaBaja = null;
         }
 
         public Usuario()
         {
             Id = _ultimoId++;
             Bloqueado = false;
+            FehaAlta = DateTime.Now;
+            FehaBaja = null;
         }
 
         public bool ValidarCredenciales(string e, string p)

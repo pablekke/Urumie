@@ -9,11 +9,14 @@ namespace Dominio
     public class Sistema
     {
         #region Singleton
+
         private Sistema()
         {
             //Precarga();
         }
+
         private static Sistema? instance = null;
+
         public static Sistema GetSistema()
         {
             if (instance == null)
@@ -22,6 +25,7 @@ namespace Dominio
             }
             return instance;
         }
+
         #endregion
 
         #region Listas
@@ -40,6 +44,7 @@ namespace Dominio
         {
             return _usuarios;
         }
+
         internal List<Alquiler?> GetAlquileres()
         {
             return _alquileres;
@@ -80,7 +85,7 @@ namespace Dominio
 
             a.EsValido();
 
-            a.Dueño.
+            a.Dueño.AltaAlquiler(a);
             _alquileres.Add(a);
         }
 
