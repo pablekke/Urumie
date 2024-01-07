@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\WebAppReact",
+    "\\WebAppReact\\Controllers"
   ],
-  "SelectedNode": "\\WebApp.sln",
+  "SelectedNode": "\\WebAppReact\\Controllers\\TareaController.cs",
   "PreviewInSolutionExplorer": false
 }

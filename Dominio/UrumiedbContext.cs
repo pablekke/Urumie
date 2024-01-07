@@ -4,8 +4,12 @@ using Dominio.Controllers;
 using Microsoft.EntityFrameworkCore;
 
 public partial class UrumiedbContext : DbContext
-
 {
+    public UrumiedbContext(DbContextOptions<UrumiedbContext> options)
+        : base(options)
+    {
+
+    }
 
     public DbSet<Usuario> Usuario { get; set; }
     public DbSet<Alquiler> Alquiler { get; set; }
@@ -16,10 +20,6 @@ public partial class UrumiedbContext : DbContext
     {
     }
 
-    public UrumiedbContext(DbContextOptions<UrumiedbContext> options)
-        : base(options)
-    {
-    }
 
     public virtual DbSet<Alquiler> Alquilers { get; set; }
 
