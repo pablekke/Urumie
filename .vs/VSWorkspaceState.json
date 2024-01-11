@@ -1,9 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Dominio",
+    "\\Dominio\\Controllers",
     "\\WebAppReact",
     "\\WebAppReact\\Controllers"
   ],
-  "SelectedNode": "\\WebAppReact\\Controllers\\TareaController.cs",
+  "SelectedNode": "\\Dominio\\Controllers\\Usuario.cs",
   "PreviewInSolutionExplorer": false
 }

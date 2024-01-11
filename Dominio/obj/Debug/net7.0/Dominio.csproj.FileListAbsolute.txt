@@ -13,3 +13,17 @@ C:\Users\csmat\source\repos\Urumie\Dominio\obj\Debug\net7.0\Dominio.pdb
 C:\Users\csmat\source\repos\Urumie\Dominio\obj\Debug\net7.0\Dominio.genruntimeconfig.cache
 C:\Users\csmat\source\repos\Urumie\Dominio\obj\Debug\net7.0\ref\Dominio.dll
 C:\Users\csmat\source\repos\Urumie\Dominio\obj\Debug\net7.0\Dominio.sourcelink.json
+C:\Users\pableke\Desktop\Proyectos\Urumie\Dominio\bin\Debug\net7.0\Dominio.deps.json
+C:\Users\pableke\Desktop\Proyectos\Urumie\Dominio\bin\Debug\net7.0\Dominio.runtimeconfig.json
+C:\Users\pableke\Desktop\Proyectos\Urumie\Dominio\bin\Debug\net7.0\Dominio.dll
+C:\Users\pableke\Desktop\Proyectos\Urumie\Dominio\bin\Debug\net7.0\Dominio.pdb
+C:\Users\pableke\Desktop\Proyectos\Urumie\Dominio\obj\Debug\net7.0\Dominio.csproj.AssemblyReference.cache
+C:\Users\pableke\Desktop\Proyectos\Urumie\Dominio\obj\Debug\net7.0\Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pableke\Desktop\Proyectos\Urumie\Dominio\obj\Debug\net7.0\Dominio.AssemblyInfoInputs.cache
+C:\Users\pableke\Desktop\Proyectos\Urumie\Dominio\obj\Debug\net7.0\Dominio.AssemblyInfo.cs
+C:\Users\pableke\Desktop\Proyectos\Urumie\Dominio\obj\Debug\net7.0\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\pableke\Desktop\Proyectos\Urumie\Dominio\obj\Debug\net7.0\Dominio.dll
+C:\Users\pableke\Desktop\Proyectos\Urumie\Dominio\obj\Debug\net7.0\refint\Dominio.dll
+C:\Users\pableke\Desktop\Proyectos\Urumie\Dominio\obj\Debug\net7.0\Dominio.pdb
+C:\Users\pableke\Desktop\Proyectos\Urumie\Dominio\obj\Debug\net7.0\Dominio.genruntimeconfig.cache
+C:\Users\pableke\Desktop\Proyectos\Urumie\Dominio\obj\Debug\net7.0\ref\Dominio.dll

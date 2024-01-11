@@ -10,10 +10,12 @@ namespace Dominio.Controllers
         public int Id { get; set; }
         public bool Bloqueado { get; set; }
         public bool Alquilado { get; set; }
+        public List<string> Fotos { get; set; }
         public Propietario? Propietario { get; set; }
         public Habitable? Habitable { get; set; }
         public string? Inmobiliaria { get; set; }
         public string? Descripcion { get; set; }
+        public DateTime DisponibleDesde { get; set; }
         public bool EsApto { get; set; }
         public bool Garage { get; set; }
         public bool Mascotas { get; set; }
@@ -25,9 +27,7 @@ namespace Dominio.Controllers
             Id = _ultimoId++;
             Bloqueado = false;
             Alquilado = false;
-            Garage = false;
-            Mascotas = false;
-            EsApto = false;
+            Fotos = new List<string>();
         }
         public void Alquilar()
         {

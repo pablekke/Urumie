@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "urYhoy4mO31qIR3RGXCdEQ5qLr6WXHq/2rjFG4VTrsei4Tx/YIwaejUT9QNdgfwJGsVRdIqINZc6Hh3c5hKbSA==",
+  "dgSpecHash": "eNzN77h9YBi/T+4Otmfub6Amsp63WXsYCAf8o+ikQliOyHnSNYt0xN/OwF9uIo6JKoOJH/39JI4OSlvM3c3VJg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pableke\\Source\\Repos\\pablekke\\Urumie\\DBApi\\DBApi.csproj",
+  "projectFilePath": "C:\\Users\\pableke\\Desktop\\Proyectos\\Urumie\\DBApi\\DBApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pableke\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.10\\microsoft.aspnetcore.openapi.7.0.10.nupkg.sha512",
     "C:\\Users\\pableke\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

@@ -36,6 +36,8 @@ namespace Dominio.Controllers
 
         private List<Solicitud?> _solicitudes = new List<Solicitud?>();
 
+        public List<string> _lenguajes = new List<string>();
+
         #endregion
 
         #region Obtener Listas
@@ -57,9 +59,52 @@ namespace Dominio.Controllers
 
         #endregion
 
+        #region Obtener por ID
+
+        public Usuario? EncontrarUsuarioPorId(int id)
+        {
+            foreach (var usuario in _usuarios)
+            {
+                if (usuario.Id == id)
+                {
+                    return usuario;
+                }
+            }
+
+            return null;
+        }
+
+        public Alquiler? EncontrarAlquilerPorId(int id)
+        {
+            foreach (var alquiler in _alquileres)
+            {
+                if (alquiler.Id == id)
+                {
+                    return alquiler;
+                }
+            }
+
+            return null;
+        }
+
+        public Solicitud? EncontrarSolicitudPorId(int id)
+        {
+            foreach (var solicitud in _solicitudes)
+            {
+                if (solicitud.Id == id)
+                {
+                    return solicitud;
+                }
+            }
+
+            return null;
+        }
+
+        #endregion
+
         #region Alta a las listas
 
-        internal void AltaUsuario(Usuario u)
+        public void AltaUsuario(Usuario? u)
         {
             if (u is null)
             {
@@ -76,7 +121,7 @@ namespace Dominio.Controllers
             _usuarios.Add(u);
         }
 
-        public void AltaAlquiler(Alquiler a)
+        public void AltaAlquiler(Alquiler? a)
         {
             if (a is null)
             {
@@ -85,11 +130,12 @@ namespace Dominio.Controllers
 
             a.EsValido();
 
-            a.Dueño.AltaAlquiler(a);
+            a.Propietario.AltaAlquiler(a);
+
             _alquileres.Add(a);
         }
 
-        public void AltaSolicitud(Solicitud s)
+        public void AltaSolicitud(Solicitud? s)
         {
             if (s is null)
             {
@@ -121,12 +167,12 @@ namespace Dominio.Controllers
 
         public void BloquearUsuario(Usuario u)
         {
-            u.Bloquear();
+            u.BloquearUsuario();
         }
 
         public void DesbloquearUsuario(Usuario u)
         {
-            u.Desbloquear();
+            u.DesbloquearUsuario();
         }
 
         #endregion
@@ -145,24 +191,37 @@ namespace Dominio.Controllers
 
         public void BloquearAlquiler(Alquiler a)
         {
-            a.Bloquear();
+            a.BloquearAlquiler();
         }
 
         public void DesbloquearAlquiler(Alquiler a)
         {
-            a.Desbloquear();
+            a.DesbloquearAlquiler();
         }
 
         #endregion
 
-        #region 
-        #endregion
-        #region 
-        #endregion
-        #region 
-        #endregion
-        #region 
-        #endregion
+        #region Precarga
+    
+        #region Inquilinos
+            Inquilino i1 = new Inquilino(,);
+        #endregion 
+        {
+    Foto = null,
+    Nombre = "Juan",
+    Apellido = "Pérez",
+    Email = "juan@example.com",
+    Pass = "contraseña123",
+    Genero = Genero.Masculino
+    // La FechaAlta se establece automáticamente en el constructor
+    // FechaBaja se deja como null por defecto
+};
+    #endregion
 
-    }
+    #region 
+    #endregion
+    #region 
+    #endregion
+
+}
 }

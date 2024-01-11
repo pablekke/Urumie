@@ -1,5 +1,3 @@
-
-
 using Dominio;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,9 +10,10 @@ builder.Services.AddDbContext<UrumiedbContext>();
 
 var app = builder.Build();
 
+
+
 // Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
+if (!app.Environment.IsDevelopment()){
 }
 
 app.UseStaticFiles();
@@ -26,5 +25,7 @@ app.MapControllerRoute(
 	pattern: "{controller}/{action=Index}/{id?}");
 
 app.MapFallbackToFile("index.html");
+
+
 
 app.Run();

@@ -9,7 +9,7 @@ namespace Dominio.Controllers
 {
     public class Miembro : Usuario
     {
-        private List<Mensaje> _mensajes = new List<Mensaje>();
+        private List<Mensaje?>? _mensajes { get; set; }
         internal int? Telefono { get; set; }
         internal DateTime? FechaNacimiento { get; set; }
         internal Genero? Genero { get; set; }
@@ -17,7 +17,18 @@ namespace Dominio.Controllers
 
         public Miembro() : base()
         {
+            _mensajes = new List<Mensaje?>();
             EmailVerificado = false;
+        }
+        public void AddMensaje(Mensaje mensaje)
+        {
+            mensaje.EsValido();
+
+            _mensajes.Add(mensaje);
+        }
+        public List<Mensaje?>? Mensajes()
+        {
+            return _mensajes;
         }
         public override void EsValido()
         {

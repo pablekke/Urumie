@@ -14,7 +14,7 @@ namespace Dominio.Controllers
         {
         }
 
-        public void AltaAlquiler(Alquiler a)
+        public void AltaAlquiler(Alquiler? a)
         {
             a.EsValido();
             _alquileres.Add(a);

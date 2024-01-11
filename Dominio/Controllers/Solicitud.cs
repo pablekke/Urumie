@@ -41,13 +41,13 @@ namespace Dominio.Controllers
         #endregion
 
         #region Methods
-        /*public void Aceptar()
+        public void Aceptar()
         {
             Estado = Estado.Aprobada;
             Solicitante.AddAmigo(Solicitado);
             Solicitado.AddAmigo(Solicitante);
             FechaAceptada = DateTime.Now;
-        }*/
+        }
 
         public void Declinar()
         {
@@ -57,10 +57,14 @@ namespace Dominio.Controllers
 
         public void EsValido()
         {
-            /*if (Solicitante.Bloqueado)
+            if (Solicitante.Bloqueado)
             {
-                throw new Exception("Solicitante bloqueado");
-            }*/
+                throw new Exception("Usuario solicitante bloqueado");
+            }
+            if (Solicitante.Bloqueado)
+            {
+                throw new Exception("Usuario Solicitado bloqueado");
+            }
 
             if (Solicitante == null)
             {
@@ -78,10 +82,10 @@ namespace Dominio.Controllers
             }
         }
 
-        /*public override string ToString()
+        public override string ToString()
         {
             return $"Solicitante:{Solicitante.Nombre} {Solicitante.Apellido}\nSolicitado: {Solicitado.Nombre} {Solicitado.Apellido}";
-        }*/
+        }
         #endregion
     }
 }
